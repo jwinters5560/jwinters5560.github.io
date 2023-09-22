@@ -1,9 +1,13 @@
 .banner {
+    color:white;
     margin-bottom: 10px;
     background-color:red;
+    display:block;
 }
 
 .content {
+    color:white;
     margin-bottom:60px;
     background-color:black;
+    display:block;
 }
