@@ -1,35 +1,173 @@
+@font-face {
+    font-family: sfDisplay;
+    src: url('Fonts/SFPro/sfdBlack.otf');
+    font-weight: bolder;
+}
+@font-face {
+    font-family: sfDisplay;
+    src: url('Fonts/SFPro/sfdBold.otf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: sfDisplay;
+    src: url('Fonts/SFPro/sfdRegular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: sfText;
+    src: url('Fonts/SFPro/sftRegular.otf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: sfText;
+    src: url('Fonts/SFPro/sftBold.otf');
+    font-weight: bold;
+}
+
+
+
+
+.wrapper {
+    margin:auto;
+    width:960px;
+}
+nav,header,footer {
+    text-align:center;
+}
+
+
+
+
 h1 {
-    
+    color: #000;
+    font-size: 48px;
+    font-family: 'sfDisplay', Arial, sans-serif;
+    font-weight: bolder;
 }
-
 h2 {
-
+    color: #353535;
+    font-size: 36px;
+    font-family: 'sfDisplay', Arial, sans-serif;
+    font-weight: bolder;
 }
-
 h3 {
-
+    color: #353535;
+    font-size: 30px;
+    font-family: 'sfDisplay', Arial, sans-serif;
+    font-weight: bold;
 }
-
 h4 {
-
+    color: #555;
+    font-size: 24px;
+    font-family: 'sfDisplay', Arial, sans-serif;
+    font-weight: bold;
 }
-
 h5 {
-
+    color: #555;
+    font-size: 18px;
+    font-family: 'sfDisplay', Arial, sans-serif;
+    font-weight: bold;
 }
 
-p {
 
+
+
+p, blockquote, ol, ul {
+    color: #353535;
+    font-family: 'sfText', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
+
+
+/* Hyperlinks */
+a {
+    color: #3468ca;
+    font-family: 'sfText', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none; 
+    border-bottom:1px dotted;
+}
+a:hover {
+    color: #15387a;
+}
+a:active {
+    border-bottom:none;
+}
+a:visited {
+    color: rgb(69, 59, 163);
+}
+
+/* Active classes used for nav buttons */
+.unselectednav{
+    color: #404040;
+    border-bottom:none;
+    display:inline-block;
+    padding:6px;
+    padding-left:18px;
+    padding-right:18px;
+    font-size: 12px;
+}
+.selectednav, .selectednav:hover, .selectednav:visited {
+    color: #505050;
+    border-bottom:none;
+    background-color:#00000040;
+    border-radius: 4px;
+    padding:6px;
+    padding-left:18px;
+    padding-right:18px;
+    font-size: 12px;
+
+}
+.unselectednav:hover, .unselectednav:visited {
+    color: #606060;
+    background-color:#00000010;
+    border-radius: 4px;
+}
+
+
+
+img {
+    border-radius: 8px;
 }
 
 blockquote {
-
-}
-
-ol {
-
+    border-left: 1px solid #888;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 ul {
-    
+    list-style: outside;
+}
+
+header{
+    padding-top: 8px;
+}
+
+.centerAlign {
+
+    text-align:center;
+
+}
+
+.rightAlign {
+
+    text-align:right;
+
+}
+
+.pLImg {
+    float: left;
+    margin: 20px 20px 20px 0px;
+    width: 200px;
+    height: 200px;
+}
+.pRImg {
+    float: right;
+    margin: 20px 0px 20px 20px;
+    width: 200px;
+    height: 200px;
 }
